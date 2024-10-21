@@ -1,5 +1,10 @@
 # Visit https://foundry-rs.github.io/starknet-foundry/appendix/snfoundry-toml.html for more information
 
+[sncast.account1]
+account = "account1"
+accounts-file = "/Users/jonathanshahak/.starknet_accounts/starknet_open_zeppelin_accounts.json"
+url = "https://starknet-sepolia.public.blastapi.io/rpc/v0_6"
+
 # [sncast.myprofile1]                                    # Define a profile name
 # url = "http://127.0.0.1:5050/"                         # Url of the RPC provider
 # accounts_file = "../account-file"                      # Path to the file with the account data

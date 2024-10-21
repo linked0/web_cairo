@@ -98,3 +98,9 @@ error[E0277]: the trait bound `[CodeMapping]: std::default::Default` is not sati
 
 **Solution:**
 Update rust by running the command `rustup update`.
+
+
+## History
+### 24.10.21 Mon
+- Succeeded in testing for `src/cairo_crash_course/basic_types`
+- move `tests` folder to `_tests` because it's old artifacts
