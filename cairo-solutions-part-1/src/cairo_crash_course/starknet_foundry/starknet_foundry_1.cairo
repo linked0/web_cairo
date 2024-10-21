@@ -1,0 +1,5 @@
+mod value_contract;
+
+#[cfg(test)]
+mod test_starknet_foundry_1;
+
