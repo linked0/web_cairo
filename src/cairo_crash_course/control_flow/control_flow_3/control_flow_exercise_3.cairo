@@ -1,4 +1,4 @@
-fn looping_conditionals(array_of_numbers: Array<u128>) -> u32 {
+pub fn looping_conditionals(array_of_numbers: Array<u128>) -> u32 {
     // Use this variable as index
     let mut i: u32 = 0;
     println!("Iterating through an array with length {}", array_of_numbers.len());

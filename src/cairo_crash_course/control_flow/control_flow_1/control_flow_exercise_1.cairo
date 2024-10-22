@@ -1,4 +1,4 @@
-fn practice_if() -> u32 {
+pub fn practice_if() -> u32 {
     let l33t = 1337;
     let not_l33t = 0;
     let always_the_truth = true;

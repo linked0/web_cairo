@@ -1,11 +1,11 @@
 #[derive(Drop)]
-struct MY_STRUCT {
-    product: u32,
-    my_array: Array<u32>
+pub struct MY_STRUCT {
+    pub product: u32,
+    pub my_array: Array<u32>
 }
 
 // TODO: Complete the function to solve the exercise.
-fn using_while(my_struct: MY_STRUCT) -> u32 {
+pub fn using_while(my_struct: MY_STRUCT) -> u32 {
     let mut i = 0;
     let mut result = my_struct.product;
 

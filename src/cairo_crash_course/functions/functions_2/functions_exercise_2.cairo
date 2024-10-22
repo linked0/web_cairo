@@ -1,5 +1,5 @@
 // TODO: Complete the function according to instructions
-fn is_perfect(number: u128) -> bool {
+pub fn is_perfect(number: u128) -> bool {
     if number == 0 {
         return false;
     }

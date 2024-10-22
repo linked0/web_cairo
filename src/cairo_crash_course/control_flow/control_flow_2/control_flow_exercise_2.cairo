@@ -1,4 +1,4 @@
-fn conditional_counter() -> u32 {
+pub fn conditional_counter() -> u32 {
     let mut index = 0;
 
     // TODO: Complete the loop according to the instructions

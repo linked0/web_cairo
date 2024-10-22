@@ -1,5 +1,10 @@
 # Cairo Web3 Project
 
+## Simple Test
+```
+snforge test control_flow_2
+```
+
 ## Cairo Development
 ### Cairo Plugin
   - Cairo 1.0 (with r) & Cairo Syntax
