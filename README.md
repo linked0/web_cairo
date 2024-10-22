@@ -1,6 +1,7 @@
 # Cairo Web3 Project
 
 ## Simple Test
+일단 아래 테스트는 이거 하나면 됨.
 ```
 snforge test control_flow_2
 ```
