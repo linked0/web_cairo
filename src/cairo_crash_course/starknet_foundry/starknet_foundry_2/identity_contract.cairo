@@ -1,13 +1,13 @@
 use starknet::ContractAddress;
 
 #[starknet::interface]
-trait IIdentityContract<TContractState> {
+pub trait IIdentityContract<TContractState> {
     fn who_is_calling(self: @TContractState) -> ContractAddress;
     fn what_time_is_it(self: @TContractState) -> u64;
 }
 
 #[starknet::contract]
-mod IdentityContract {
+pub mod IdentityContract {
     use starknet::{ContractAddress, get_caller_address, get_block_timestamp};
 
     // Contract Storage

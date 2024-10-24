@@ -1,11 +1,11 @@
 #[starknet::interface]
-trait IValueContract<TContractState> {
+pub trait IValueContract<TContractState> {
     fn add_value(ref self: TContractState, value_to_add: u32);
     fn get_value(self: @TContractState) -> u32;
 }
 
 #[starknet::contract]
-mod ValueContract {
+pub mod ValueContract {
     // Contract Storage
     #[storage]
     struct Storage {

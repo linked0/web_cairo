@@ -1,6 +1,6 @@
 // TODO: Create the `IMyFirstCairoContract` interface with `set_number` and `get_number` functions
 #[starknet::interface]
-trait IMyFirstCairoContract<TContractState> {
+pub trait IMyFirstCairoContract<TContractState> {
     fn set_number(ref self: TContractState, number: u256);
     fn get_number(self: @TContractState) -> u256;
 }
