@@ -52,7 +52,53 @@ git remote add origin git@github.com:linked0/web_cairo.git
 git push -u origin main
 ```
 
+## How setting up account
 
+### Creating an account
+
+#### A Signer
+A smart contract that can sign transactions. You should create a keystore file. If you don't have an account, create with this command.
+
+Creating new account
+```
+
+sncast --url <rpc url> \
+   account add \
+   --name account1 \
+   --address <address> \
+   --private-key <private key> \
+   --public-key <public key> \
+   --add-profile account1 \
+   --type braavos \
+```
+
+You can create a keystore file from a private key.
+```
+starkli signer keystore from-key ~/.starkli-wallets/deployer/keystore.json
+```
+
+#### An Account Descriptor
+- A json file that contains information about the smart wallet, such as its address and public key.
+```
+starkli account fetch <address> --output ~/.starkli-wallets/deployer/account.json --rpc <rpc url>
+```
+
+## Useful links
+
+[Starknet Foundry writing tests](https://foundry-rs.github.io/starknet-foundry/testing/testing.html)
+
+[Starknet Foundry testing contracts](https://foundry-rs.github.io/starknet-foundry/testing/contracts.html)
+
+[Starkneet Docs](https://docs.starknet.io/)
+
+[Foundry Book: Dive into sncast](https://foundry-rs.github.io/starknet-foundry/starknet/index.html)
+
+[Starknet.js](https://starknetjs.com/docs/guides/intro)
+
+[Setup Starknet Env.](https://docs.starknet.io/quick-start/environment-setup/)
+
+
+----
 ## csch-solutions-part-1 README
 
 JohnnyTime's Cario Smart Contract Hacking Course Part 1 Exercises Repository WITH Solutions.
